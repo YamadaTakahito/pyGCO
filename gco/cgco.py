@@ -88,7 +88,8 @@ _cgco.gcoExpansionOnAlpha.restypes = ct.c_int
 _cgco.gcoSwap.argtypes = [_handle_type, ct.c_int, _energy_ptr_type]
 _cgco.gcoSwap.restypes = ct.c_int
 
-_cgco.gcoAlphaBetaSwap.argtypes = [_handle_type, _label_id_type, _label_id_type]
+_cgco.gcoAlphaBetaSwap.argtypes = [
+    _handle_type, _label_id_type, _label_id_type]
 _cgco.gcoAlphaBetaSwap.restypes = ct.c_int
 
 _cgco.gcoComputeEnergy.argtypes = [_handle_type, _energy_ptr_type]
@@ -100,11 +101,13 @@ _cgco.gcoComputeDataEnergy.restypes = ct.c_int
 _cgco.gcoComputeSmoothEnergy.argtypes = [_handle_type, _energy_ptr_type]
 _cgco.gcoComputeSmoothEnergy.restypes = ct.c_int
 
-_cgco.gcoGetLabelAtSite.argtypes = [_handle_type, _site_id_type, _label_ptr_type]
+_cgco.gcoGetLabelAtSite.argtypes = [
+    _handle_type, _site_id_type, _label_ptr_type]
 _cgco.gcoGetLabelAtSite.restypes = ct.c_int
 
 _cgco.gcoGetLabels.argtypes = [_handle_type, _label_ptr_type]
 _cgco.gcoGetLabels.restype = ct.c_int
 
-_cgco.gcoInitLabelAtSite.argtypes = [_handle_type, _site_id_type, _label_id_type]
+_cgco.gcoInitLabelAtSite.argtypes = [
+    _handle_type, _site_id_type, _label_id_type]
 _cgco.gcoInitLabelAtSite.restypes = ct.c_int
